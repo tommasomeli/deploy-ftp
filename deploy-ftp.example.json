@@ -1,0 +1,23 @@
+{
+    "host": "your-ftp-server.com",
+    "user": "your-username",
+    "password": "your-password",
+    "secure": true,
+    "port": 21,
+    "local_dir": "./dist",
+    "remote_dir": "/public_html",
+    "clean_remote_files": true,
+    "clear_destination": false,
+    "dry_run": false,
+    "preserve": [
+        "uploads/",
+        "cache/",
+        ".htaccess"
+    ],
+    "reconnect": true,
+    "max_retries": 3,
+    "retry_delay": 1000,
+    "secureOptions": {
+        "rejectUnauthorized": false
+    }
+}
